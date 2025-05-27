@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>مغازه شماره ۱</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div class="shop-container">
+            <h1>سرقفلی دار :&nbsp;ناصر تقوی دوس <br></h1>
+            <div class="gallery">
+                <img src="../images/u21-1-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/u21-2-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/u21-3-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/u21-4-thumb.jpg" onclick="openModal(this)"/>
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeModal()">
+                <img id="lightbox-img"/>
+            </div>
+            <script>
+  function openModal(img) {
+    const bigSrc = img.src.replace("-thumb", "");
+    document.getElementById("lightbox-img").src = bigSrc;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+            <p>متراژ مغازه : 17.23 متر مربع</p>
+            <p>شماره مغازه : طبقه اول - شماره 26</p>
+            <p>کاربری سند : -</p>
+            <p>کاربری فعلی: -</p>
+            <p>وضعیت قرار داد : مالکیت متعلق به خودش است</p>
+            <p>وضعیت بالکن : -</p>
+            <p>تخلف کلی : -</p>
+            <p>تخلف جزئی : -</p>
+            <p>شماره تماس : -</p>
+            <a href="../floor1.html">بازگشت به نقشه</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>مغازه شماره ۱</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div class="shop-container">
+            <h1>سرقفلی دار : مهدی مودب سیگاری</h1>
+            <div class="gallery">
+                <img src="../images/s2-1-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s2-2-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s2-3-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s2-4-thumb.jpg" onclick="openModal(this)"/>
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeModal()">
+                <img id="lightbox-img"/>
+            </div>
+            <script>
+  function openModal(img) {
+    const bigSrc = img.src.replace("-thumb", "");
+    document.getElementById("lightbox-img").src = bigSrc;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+            <p>متراژ مغازه : 14.55 متر مربع</p>
+            <p>شماره مغازه : طبقه همکف - شماره 2</p>
+            <p>کاربری سند : پلاسکو</p>
+            <p>کاربری فعلی: مرغ و تخم مرغ</p>
+            <p>وضعیت قرار داد : 1384</p>
+            <p>تخلف کلی : مغایرت شغلی</p>
+            <p>تخلف جزئی : قراردادن وسایل در مشاع</p>
+            <p>شماره تماس : 09017988110</p><a href="../index.html">بازگشت به نقشه</a>
+        </div>
+    </body>
+</html>

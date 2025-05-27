@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>مغازه شماره ۱</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div class="shop-container">
+            <h1>سرقفلی دار :<br>مجید فیض امام دوست / آیت سلامت<br></h1>
+            <div class="gallery">
+                <img src="../images/s4-1-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s4-2-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s4-3-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s4-4-thumb.jpg" onclick="openModal(this)"/>
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeModal()">
+                <img id="lightbox-img"/>
+            </div>
+            <script>
+  function openModal(img) {
+    const bigSrc = img.src.replace("-thumb", "");
+    document.getElementById("lightbox-img").src = bigSrc;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+            <p>متراژ مغازه : 14.55 متر مربع</p>
+            <p>شماره مغازه : طبقه همکف - شماره 4</p>
+            <p>کاربری سند : کافه</p>
+            <p>کاربری فعلی: کافه</p>
+            <p>وضعیت قرار داد : 1385</p>
+            <p>تخلف کلی : قراردادن وسایل در حریم مشاع&nbsp;</p>
+            <p>تخلف جزئی : ریختن روغن جامد در فاضلاب مشترک پاساژ</p>
+            <p>شماره تماس : 09111311239</p>
+            <a href="../index.html">بازگشت به نقشه</a>
+        </div>
+    </body>
+</html>

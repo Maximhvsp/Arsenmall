@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>مغازه شماره ۱</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div class="shop-container">
+            <h1>سرقفلی دار : علی شادروح<br></h1>
+            <div class="gallery">
+                <img src="../images/s20-1-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s20-2-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s20-3-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s20-4-thumb.jpg" onclick="openModal(this)"/>
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeModal()">
+                <img id="lightbox-img"/>
+            </div>
+            <script>
+  function openModal(img) {
+    const bigSrc = img.src.replace("-thumb", "");
+    document.getElementById("lightbox-img").src = bigSrc;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+            <hr class="section-divider">
+            <p><strong>مشخصات مالک سرقفلی (سرقفلی‌دار)</strong></p>
+            <hr class="section-divider">
+            <p>نام سرقفلی دار : علی شادروح</p>
+            <p>کد ملی : -</p>
+            <p>شماره تماس : 09111322055</p>
+            <p>نشانی محل سکونت : -</p>
+            <p>کد پستی محل سکونت: -</p>
+            <hr class="section-divider">
+            <p><strong>مشخصات مغازه</strong></p>
+            <hr class="section-divider">
+            <p>شماره مغازه : طبقه همکف - شماره 20</p>
+            <p>شماره تلفن مغازه : -</p>
+            <p>کد پستی مغازه : -</p>
+            <p>متراژ مغازه : 12.5 متر مربع</p>
+            <p>وضعیت بالکن : -</p>
+            <p>کاربری سند : زرگری</p>
+            <p>کاربری فعلی: زرگری</p>
+            <hr class="section-divider">
+            <p><strong>وضعیت حقوقی و مالکیت</strong></p>
+            <hr class="section-divider">
+            <p>تقسیم بندی سرقفلی براساس دانگ :<br>1. آقای/خانم &quot;علی شادروح&quot; به مقدار --- دانگ<br>2. آقای/خانم .......................... به مقدار --- دانگ <br>3. آقای/خانم .......................... به مقدار --- دانگ<br></p>
+            <p>وضعیت قرار داد : 1376</p>
+            <hr class="section-divider">
+            <p><strong>تخلفات :</strong></p>
+            <hr class="section-divider">
+            <p>تخلف کلی : -</p>
+            <p>تخلف جزئی : -</p><a href="../index.html">بازگشت به نقشه</a>
+        </div>
+    </body>
+</html>

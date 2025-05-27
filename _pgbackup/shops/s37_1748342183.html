@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>مغازه شماره ۱</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div class="shop-container">
+            <h1>سرقفلی دار : علی چلسیان<br></h1>
+            <div class="gallery">
+                <img src="../images/s37-1-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s37-2-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s37-3-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s37-4-thumb.jpg" onclick="openModal(this)"/>
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeModal()">
+                <img id="lightbox-img"/>
+            </div>
+            <script>
+  function openModal(img) {
+    const bigSrc = img.src.replace("-thumb", "");
+    document.getElementById("lightbox-img").src = bigSrc;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+            <p>متراژ مغازه :10.56 متر مربع</p>
+            <p>شماره مغازه : طبقه همکف - شماره 36</p>
+            <p>کاربری سند : زرگری</p>
+            <p>کاربری فعلی: زرگری</p>
+            <p>وضعیت قرار داد : 1392</p>
+            <p>تخلف کلی : -</p>
+            <p>تخلف جزئی : تابلو مغازه بیش از حد جلو آمده</p>
+            <p>شماره تماس : 09117664238</p><a href="../index.html">بازگشت به نقشه</a>
+        </div>
+    </body>
+</html>

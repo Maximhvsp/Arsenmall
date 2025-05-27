@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>مغازه شماره ۱</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+    <body>
+        <div class="shop-container">
+            <h1>سرقفلی دار :<br>&nbsp;احمد جنت خواه / محمدرضا جنت خواه</h1>
+            <div class="gallery">
+                <img src="../images/s3-1-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s3-2-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s3-3-thumb.jpg" onclick="openModal(this)"/>
+                <img src="../images/s3-4-thumb.jpg" onclick="openModal(this)"/>
+            </div>
+            <div id="lightbox" class="lightbox" onclick="closeModal()">
+                <img id="lightbox-img"/>
+            </div>
+            <script>
+  function openModal(img) {
+    const bigSrc = img.src.replace("-thumb", "");
+    document.getElementById("lightbox-img").src = bigSrc;
+    document.getElementById("lightbox").style.display = "flex";
+  }
+
+  function closeModal() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
+            <p>متراژ مغازه : 14.2 متر مربع</p>
+            <p>شماره مغازه : طبقه همکف - شماره 3</p>
+            <p>کاربری سند : خواربارفروشی</p>
+            <p>کاربری فعلی: تعطیل</p>
+            <p>وضعیت قرار داد : 1386</p>
+            <p>توضحیات : اقای جنت خواه با اجازه مالک یدونه بالکن احداث کرده که مکان انبار وسایل هست ، این انبار در راه پله ، بین طبقه همکف و طبقه اول پاساژ قرار گرفته</p>
+            <p>تخلف کلی : به حد مشاع تجاوز و مغازه رو بزرگ کرده و یک انبار ساخته بالا از سمت راه پله&nbsp;</p>
+            <p>تخلف جزئی : سیم پشت کنتور / انتقال برق به رسته ماهی فروشی / قرار دادن وسایل درمشاع</p>
+            <p>شماره تماس : 09118348435</p>
+            <a href="../index.html">بازگشت به نقشه</a>
+        </div>
+    </body>
+</html>
